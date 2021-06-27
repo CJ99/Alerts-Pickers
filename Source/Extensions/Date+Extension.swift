@@ -414,7 +414,7 @@ extension Date {
     ///
     /// - Parameter style: DateFormatter style (default is .medium)
     /// - Returns: date string
-    func dateString(ofStyle style: DateFormatter.Style = .medium) -> String {
+    public func dateString(ofStyle style: DateFormatter.Style = .medium) -> String {
         let dateFormatter = DateFormatter()
         dateFormatter.timeStyle = .none
         dateFormatter.dateStyle = style
