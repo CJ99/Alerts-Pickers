@@ -26,13 +26,7 @@ extension UIAlertController {
     @available(iOS 13.4, *)
     public func addDatePicker(mode: UIDatePicker.Mode, date: Date?, minimumDate: Date? = nil, maximumDate: Date? = nil, style: UIDatePickerStyle = .wheels, action: DatePickerViewController.Action?) {
         let datePicker = DatePickerViewController(mode: mode, date: date, minimumDate: minimumDate, maximumDate: maximumDate, style: style ,action: action)
-        var height: CGFloat = 217
-        var width: CGFloat?
-        if #available(iOS 14.0, *), style == .inline {
-            height = 280
-            width = 280
-        }
-        set(vc: datePicker, width: width, height: height)
+        set(vc: datePicker, height: 217)
     }
 }
 
